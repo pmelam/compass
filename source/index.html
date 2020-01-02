@@ -1,19 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Compass Demo</title>  
+    <link rel="shortcut icon" type="image/png" href="img/Compass.png">
     <style>
         h1 {
          color: aliceblue;
          text-align: center;
-         font-family: cursive;
+         font-family: "Comic Sans MS", cursive, sans-serif;
+         font-size: 38px;
 
         }
+
 body {
   background-color: rgb(255, 206, 100);
+}
+form { 
+    text-align: center;
+    font-family: monospace;
+    font-size: 14px;
+}
+.img-Compass1 {
+       width: 300px;
+
+}
+.Compass{
+      width: 300px;
+      box-shadow: 0 9px #999;
+      background-color: #2dd4f7;
+      cursor: pointer;
+      border: none;
+      border-radius: 13px;
+      outline: none;
+}
+.Compass:hover {background-color:#35cfef}
+
+.Compass:active{
+    background-color:#35cfef
+    transform: translateY(4px);
+    box-shadow: 0 5px #6d6d6d;
 }
     </style>
 </head>
 <body> 
-    <h1>Compass Demo </h1>
+ <img class="img-Compass1"  src="img/compass1.png" alt="My Compass1">
+    
+    <h1>Compass Demo</h1>
+    
+    <form action="">
+        X Coordinate:<br>
+        <input type="text" name="userid" >
+        <br><br>
+        Y Coordinate:<br>
+        <input type="text" name="psw">
+        <br><br> 
+        <input type="submit" value="Draw Compass" class="Compass" > 
+        </form>
 </body>
 </html>
