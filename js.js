@@ -14,5 +14,3 @@ basic.forever(() => {
     }
 });
 
-//https://makecode.microbit.org/projects/compass
-//https://www.flaticon.com/free-icon/compass_1218700?term=compass&page=1&position=55

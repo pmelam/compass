@@ -3,6 +3,18 @@
 <head>
     <title>Compass Demo</title>  
     <link rel="shortcut icon" type="image/png" href="img/Compass.png">
+        
+    <h1>Compass Demo</h1>
+    
+    <form action="">
+        X Coordinate:<br>
+        <input type="text" name="userid" >
+        <br><br>
+        Y Coordinate:<br>
+        <input type="text" name="psw">
+        <br><br> 
+        <input type="submit" value="Draw Compass" class="Compass" > 
+        </form>
     <style>
         h1 {
          color: aliceblue;
@@ -22,6 +34,8 @@ form {
 }
 .img-Compass1 {
        width: 300px;
+       padding-left: 15cm;
+       padding-top: 2cm;
 
 }
 .Compass{
@@ -40,21 +54,14 @@ form {
     transform: translateY(4px);
     box-shadow: 0 5px #6d6d6d;
 }
+.Compass45{
+     padding-left: 5cm;
+}
     </style>
 </head>
 <body> 
  <img class="img-Compass1"  src="img/compass1.png" alt="My Compass1">
-    
-    <h1>Compass Demo</h1>
-    
-    <form action="">
-        X Coordinate:<br>
-        <input type="text" name="userid" >
-        <br><br>
-        Y Coordinate:<br>
-        <input type="text" name="psw">
-        <br><br> 
-        <input type="submit" value="Draw Compass" class="Compass" > 
-        </form>
+ <img class="Compass45"src="img/compass45.png" alt="My mouse compass">
+
 </body>
 </html>
