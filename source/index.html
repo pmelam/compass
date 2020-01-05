@@ -2,95 +2,27 @@
 <html>
 <head>
     <title>Compass Demo</title>  
-    <link rel="shortcut icon" type="image/png" href="img/Compass.png">
-        
-    <h1>Compass Demo</h1>
-    
-    <form action="">
-        X Coordinate:<br>
-        <input type="text" name="userid" >
-        <br><br>
-        Y Coordinate:<br>
-        <input type="text" name="psw">
-        <br><br> 
-        <input type="submit" value="Draw Compass" class="Compass" > 
-        </form>
-        
-    <style>
-        h1 {
-         color: aliceblue;
-         text-align: center;
-         font-family: "Comic Sans MS", cursive, sans-serif;
-         font-size: 38px;
-
-        }
-
-body {
-  background-color: rgb(255, 206, 100);
-}
-form { 
-    text-align: center;
-    font-family: monospace;
-    font-size: 14px;
-}
-.img-Compass1 {
-       width: 300px;
-       padding-left: 15cm;
-       padding-top: 2cm;
-
-}
-.Compass{
-      width: 300px;
-      box-shadow: 0 9px #999;
-      background-color: #2dd4f7;
-      cursor: pointer;
-      border: none;
-      border-radius: 13px;
-      outline: none;
-}
-.Compass:hover {background-color:#35cfef}
-
-.Compass:active{
-    background-color:#35cfef;
-    transform: translateY(4px);
-    box-shadow: 0 5px #6d6d6d;
-}
-.Compass45{
-     padding-right: 7cm;
-     padding-bottom: 2.5cm;
-     padding: 50px;
-
-}
-
-.Compass45{
-  animation-name: spin;
-  animation-duration: 5000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; 
-  /* transform: rotate(3deg); */
-   /* transform: rotate(0.3rad);/ */
-   /* transform: rotate(3grad); */ 
-   /* transform: rotate(.03turn);  */
-}
-
-@keyframes spin {
- form {
-    transform: rotate(0deg);
-  }
- to {
-    transform: rotate(360deg);
-  }
-}
-
-    </style>
+    <link rel="shortcut icon" type="image/png" href="img/Compass.png">              
+    <link rel="stylesheet" href="compass.css"></style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="js.js">  </script>
-
-    
+    <script src="compass.js">  </script>    
 </head>
 <body> 
- <img class="img-Compass1"  src="img/compass1.png" alt="My Compass1">
- <img class="Compass45"src="img/Compass45.png" alt="My mouse compass">
+        
+  <h1>Compass Demo</h1>
+  <div class="compass-input"> 
+   Angle:<br>
+   <input type="text" name="angleName" id="angle" >
+   <br><br> 
+   <input type="submit" value="Draw Compass" class="Compass" onclick = "playCompass()" > 
+   </div>
+<div id="compass">
+  <span>N</span>
+  <span>E</span>
+  <span>S</span>
+  <span>W</span>
+  <div id="pointer"></div>
+</div>
 
 </body>
 </html>
