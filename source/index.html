@@ -15,6 +15,7 @@
         <br><br> 
         <input type="submit" value="Draw Compass" class="Compass" > 
         </form>
+        
     <style>
         h1 {
          color: aliceblue;
@@ -55,13 +56,41 @@ form {
     box-shadow: 0 5px #6d6d6d;
 }
 .Compass45{
-     padding-left: 5cm;
+     padding-right: 7cm;
+     padding-bottom: 2.5cm;
+     padding: 50px;
+
 }
+
+.Compass45{
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+ form {
+    transform: rotate(0deg);
+  }
+ to {
+    transform: rotate(360deg);
+  }
+}
+
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js.js">  </script>
+
+    
 </head>
 <body> 
  <img class="img-Compass1"  src="img/compass1.png" alt="My Compass1">
- <img class="Compass45"src="img/compass45.png" alt="My mouse compass">
+ <img class="Compass45"src="img/Compass45.png" alt="My mouse compass">
 
 </body>
 </html>
