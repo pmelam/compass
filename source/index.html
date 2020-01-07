@@ -2,17 +2,17 @@
 <html>
 <head>
     <title>Compass Demo</title>  
-    <link rel="shortcut icon" type="image/png" href="img/Compass.png">              
+    <link rel="shortcut icon" type="image/png" href="img/compass.png">              
     <link rel="stylesheet" href="compass.css"></style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="compass.js">  </script>    
+    <script src="compass.js">  </script>   
 </head>
 <body> 
         
   <h1>Compass Demo</h1>
   <div class="compass-input"> 
    Angle:<br>
-   <input type="text" name="angleName" id="angle" >
+   <input type="number" name="angleName" id="angle" value="0-360" class="degree" min="0" max="360">
    <br><br> 
    <input type="submit" value="Draw Compass" class="Compass" onclick = "playCompass()" > 
    </div>
@@ -23,6 +23,5 @@
   <span>W</span>
   <div id="pointer"></div>
 </div>
-
 </body>
 </html>

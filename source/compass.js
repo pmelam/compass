@@ -1,9 +1,9 @@
 // $(document).ready(function() {
-//     $('.Compass').click(function() {
-//    //   $(this).addClass('#pointer') //remove class to stop animation
+   // $('.Compass').click(function() {
+//    //$(this).addClass('#pointer') //remove class to stop animation
 
-//     });
-//   });
+   //  });
+  // });
 
 function playCompass(){
   //We'll use this to change the CSS Variable values from JS
